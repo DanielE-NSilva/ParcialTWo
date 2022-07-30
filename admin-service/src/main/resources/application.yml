@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: admin-service
+    security:
+        user:
+            name: ${ConfigUser}
+            password: ${ConfigPassword}
+server:
+    port: 9090

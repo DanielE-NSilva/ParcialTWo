@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ShowTimes-service
+  cloud:
+    config:
+      uri: http://localhost:9050/ParcialTwo/v1
+      username: ${ConfigUser}
+      password: ${ConfigPassword}
+      enabled: true

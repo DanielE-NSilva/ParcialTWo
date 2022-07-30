@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/Users/Nuñez Silva/IdeaProjects/ParcialTwoConfigData-main
+  security:
+    user:
+      name: ${ConfigUser}
+      password: ${ConfigPassword}
+server:
+  port: 9050
+  servlet:
+    context-path: "/ParcialTwo/v1"
